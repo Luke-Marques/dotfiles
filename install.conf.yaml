@@ -6,7 +6,8 @@
 
 - link:
     ~/.zshenv: dots/zsh/.zshenv
-    ~/.config/zsh: dots/zsh
+    ~/.zshrc: dots/zsh/.zshrc
+    ~/.zsh_aliases: dots/zsh/.zsh_aliases
     ~/.config/bat: dots/bat
     ~/.config/direnv: dots/direnv
     ~/.config/ghostty: dots/ghostty
@@ -17,6 +18,7 @@
     ~/.config/starship.toml: dots/starship/starship.toml
     ~/.config/yazi: dots/yazi
     ~/.config/zellij: dots/zellij
+    ~/.config/fish: dots/fish
 
 - create:
   - ~/.config/zsh/.zsh_history

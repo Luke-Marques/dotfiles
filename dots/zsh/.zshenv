@@ -1,5 +1,7 @@
 export PATH=${PATH}:${HOME}/bin
 
+export PATH="/opt/homebrew/opt/trash/bin:$PATH"
+
 # Oh My Zsh
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_THEME=""
