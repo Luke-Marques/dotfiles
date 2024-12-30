@@ -1,0 +1,109 @@
+# Kitty Terminal Configuration
+
+# --- Theme ---------------------------------------------------------------------------
+
+# Set custom theme config file
+include themes/kanagawa/kanagawa-dragon.conf
+
+# --- Environment Variables -----------------------------------------------------------
+
+# # Export env vars so programs like lazygit launched from kitty know where to
+# # look for their config
+# env XDG_DATA_HOME=/Users/seth/.local/share
+# env XDG_CONFIG_HOME=/Users/seth/.config
+# env XDG_CACHE_HOME=/Users/seth/.cache
+# env XDG_STATE_HOME=/Users/seth/.local/state
+# env XDG_RUNTIME_DIR=/tmp
+# env ZDOTDIR=/Users/seth/.config/zsh
+# env PATH=/Users/seth/.dotfiles/bin:$PATH
+
+# --- Fonts ---------------------------------------------------------------------------
+
+# Set font styles
+font_family                   Hack Regular
+bold_font                     Hack Bold
+italic_font                   Hack Italic
+bold_italic_font              Hack Bold Italic
+
+# Set font size
+font_size                     14.0
+
+# Disable font ligatures
+disable_ligatures             always
+
+# Provide symbol map for nerd font icons
+symbol_map U+e000-U+e00a,U+ea60-U+ebeb,U+e0a0-U+e0c8,U+e0ca,U+e0cc-U+e0d4,U+e200-U+e2a9,U+e300-U+e3e3,U+e5fa-U+e6b1,U+e700-U+e7c5,U+f000-U+f2e0,U+f300-U+f372,U+f400-U+f532,U+f0001-U+f1af0 Symbols Nerd Font Mono
+
+# Use older font rendering method to avoid bolded, blurry text on MacOS
+text_composition_strategy     legacy
+
+# --- Cursor --------------------------------------------------------------------------
+
+# Cursor
+# cursor                        none
+cursor_shape                  block
+cursor_stop_blinking_after    10.0
+cursor_blink_interval         0.5
+
+# Pointer
+pointer_shape_when_dragging   hand
+
+# --- Mouse ---------------------------------------------------------------------------
+
+mouse_hide_wait               2.0
+copy_on_select                clipboard
+
+# --- Tabs ----------------------------------------------------------------------------
+
+# See: https://github.com/kovidgoyal/kitty/discussions/4447
+tab_bar_edge                  bottom
+tab_bar_align                 left
+tab_bar_style                 custom
+tab_bar_min_tabs              2
+tab_activity_symbol           none
+bell_on_tab                   no
+tab_separator                 ""
+tab_bar_margin_width          0.0
+tab_bar_margin_height         0.0 0.0
+tab_title_template            "{f'{title[:30]}…' if title.rindex(title[-1]) + 1 > 30 else (title.center(6) if (title.rindex(title[-1]) + 1) % 2 == 0 else title.center(5))}"
+active_tab_font_style         bold
+
+# --- Application Window --------------------------------------------------------------
+
+# All platforms
+hide_window_decorations       no
+draw_minimal_borders          yes
+
+# MacOS specific options
+# macos_titlebar_color          background
+macos_hide_from_tasks         no
+macos_traditional_fullscreen  no
+macos_custom_beam_cursor      yes
+macos_show_window_title_in    menubar
+
+# Remap option to alt on mac
+macos_option_as_alt           yes
+map                           opt+3 send_text all #
+
+# --- Shortcuts -----------------------------------------------------------------------
+
+# Reload kitty config
+map ctrl+f5                   load_config_file
+
+# --- Misc ----------------------------------------------------------------------------
+
+# URLs
+detect_urls                   yes
+url_style                     curly
+open_url_with                 super
+
+# # I honestly don't know what this does
+# sync_to_monitor               yes
+
+# --- Fin -----------------------------------------------------------------------------
+
+
+# BEGIN_KITTY_THEME
+# Gruvbox Dark Hard
+include current-theme.conf
+# END_KITTY_THEME

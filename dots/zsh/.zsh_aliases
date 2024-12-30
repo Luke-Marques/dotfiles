@@ -1,0 +1,21 @@
+# Better ls
+alias ls="eza -a --long --icons always"
+alias t="eza -a -T -L 2 --icons always"
+
+# Better cd
+alias cd="z"
+
+# Better cat
+alias cat="bat"
+
+# Trash > rm
+alias rm="trash"
+
+# SSH aliases
+alias create="ssh create"
+
+# Dotdrop custom config location
+alias dotdrop="dotdrop --cfg=./dotdrop/config.yaml"
+
+# Zellij
+alias zj="zellij -l welcome"
