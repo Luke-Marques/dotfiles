@@ -1,2 +1,3 @@
-[flavor]
-use = "kanagawa"
+# [flavor]
+# light = "kanagawa-dragon"
+# dark = "kanagawa-dragon"
