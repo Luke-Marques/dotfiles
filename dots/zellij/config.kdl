@@ -1,7 +1,9 @@
 default_layout "editor"
 default_mode   "locked"
 
-mouse_mode     false
+// simplified_ui  true
+pane_frames    false
+mouse_mode     true
 pane_frames    false
 copy_on_select true
 copy_command   "pbcopy"  // MacOS
@@ -10,6 +12,12 @@ keybinds clear-defaults=true {
     // Shared keybindings
     shared {
         bind "Ctrl Space" { SwitchToMode "Normal"; }
+        bind "Ctrl q" {
+          LaunchOrFocusPlugin "zj-quit" {
+            floating true
+          }
+          SwitchToMode "Locked"
+        }
     }
     shared_except "locked" {
         bind "Esc" { SwitchToMode "Locked"; }
@@ -130,10 +138,12 @@ keybinds clear-defaults=true {
 
     // Rename modes: Rename panes/tabs
     renamepane {
-        bind "Ctrl Esc" { UndoRenamePane; SwitchToMode "Pane"; }
+        bind "Esc" { UndoRenamePane; SwitchToMode "Pane"; }
+        bind "Enter" { SwitchToMode "Locked"; }
     }
     renametab {
-        bind "Ctrl Esc" { UndoRenamePane; SwitchToMode "Tab"; }
+        bind "Esc" { UndoRenamePane; SwitchToMode "Tab"; }
+        bind "Enter" { SwitchToMode "Locked"; }
     }
 
     // Resize mode: Resize panes
@@ -220,7 +230,7 @@ keybinds clear-defaults=true {
         bind "d" { Detach; }
 
         // Launch session manager pane
-        bind "s" {
+        bind "m" {
             LaunchOrFocusPlugin "session-manager" {
                 floating true
                 move_to_focused_tab true
@@ -242,6 +252,18 @@ keybinds clear-defaults=true {
             LaunchOrFocusPlugin "plugin-manager" {
                 floating true
                 move_to_focused_tab true
+            };
+            SwitchToMode "Locked"
+        }
+
+        // Launch sessionizer plugin
+        bind "s" {
+            LaunchOrFocusPlugin "zellij-sessionizer" {
+                floating true
+                move_to_focused_tab true
+                cwd "/"
+                root_dirs "/Users/luke.marques/projects/personal;/Users/luke.marques/projects/work"
+                session_layout "editor"               
             };
             SwitchToMode "Locked"
         }
@@ -269,52 +291,12 @@ plugins {
     configuration location="zellij:configuration"
     plugin-manager location="zellij:plugin-manager"
     zj-quit location="file:~/.config/zellij/bin/zj-quit.wasm"
+    zellij-sessionizer location="file:~/.config/zellij/bin/zellij-sessionizer.wasm"
 }
 load_plugins {}
 
 // Theme
-themes {
-    kanagawa-dragon {
-        // [palette]
-        // dragonBlack0 = "#0d0c0c"
-        // dragonBlack1 = "#12120f"
-        // dragonBlack2 = "#1D1C19"
-        // dragonBlack3 = "#181616"
-        // dragonBlack4 = "#282727"
-        // dragonBlack5 = "#393836"
-        // dragonBlack6 = "#625e5a"
-
-        // dragonWhite = "#c5c9c5"
-        // dragonGreen = "#87a987"
-        // dragonGreen2 = "#8a9a7b"
-        // dragonPink = "#a292a3"
-        // dragonOrange = "#b6927b"
-        // dragonOrange2 = "#b98d7b"
-        // dragonGray = "#a6a69c"
-        // dragonGray2 = "#9e9b93"
-        // dragonGray3 = "#7a8382"
-        // dragonBlue2 = "#8ba4b0"
-        // dragonViolet= "#8992a7"
-        // dragonRed = "#c4746e"
-        // dragonAqua = "#8ea4a2"
-        // dragonAsh = "#737c73"
-        // dragonTeal = "#949fb5"
-        // dragonYellow = "#c4b28a"
-
-        fg "#DCD7BA"  // fujiWhite (from official colours)
-        bg "#393836"  // dragonBlack3
-        red "#c4746e"  // dragonRed
-        green "#87a987" // dragonGreen 
-        yellow "#c4b28a" // dragonYellow
-        blue "#8ba4b0"  // dragonBlue2 
-        magenta "#8992a7"  // dragonViolet 
-        orange "#b6927b"  // dragonOrange 
-        cyan "#8ea4a2"  // dragonAqua
-        black "#181616"  // dragonBlack0
-        white "#DCD7BA"  // fujiWhite (from official colours)
-    }    
-}
-theme "kanagawa-dragon"
+theme "kanagawa-sleeping-dragon"
 
 // UI options
 ui {

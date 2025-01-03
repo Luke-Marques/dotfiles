@@ -1,0 +1,99 @@
+layout {
+	pane size=2 borderless=true {
+		plugin location="file:~/.config/zellij/bin/zjstatus.wasm" {
+			// Kanagawa Color Palette
+			color_dragon_black0   "#0d0c0c"
+			color_dragon_black1   "#12120f"
+			color_dragon_black2   "#1D1C19"
+			color_dragon_black3   "#181616"
+			color_dragon_black4   "#282727"
+			color_dragon_black5   "#393836"
+			color_dragon_black6   "#625e5a"
+			color_dragon_white    "#c5c9c5"
+			color_dragon_green    "#87a987"
+			color_dragon_green2   "#8a9a7b"
+			color_dragon_pink     "#a292a3"
+			color_dragon_orange   "#b6927b"
+			color_dragon_orange2  "#b98d7b"
+			color_dragon_gray     "#a6a69c"
+			color_dragon_gray2    "#9e9b93"
+			color_dragon_gray3    "#7a8382"
+			color_dragon_blue2    "#8ba4b0"
+			color_dragon_violet   "#8992a7"
+			color_dragon_red      "#c4746e"
+			color_dragon_aqua     "#8ea4a2"
+			color_dragon_ash      "#737c73"
+			color_dragon_teal     "#949fb5"
+			color_dragon_yellow   "#c4b28a"
+			color_fuji_white      "#DCD7BA"
+			color_old_white       "#C8C093"
+
+			// Status Bar Elements and Positions
+            format_left    "{mode}"
+            format_center  "#[fg=$dragon_black6]Welcome to Zellij. Please select a session."
+            format_right   ""
+            format_space   ""
+
+            // Border
+            border_enabled  "true"
+            border_char     "─"
+            border_format   "#[fg=$dragon_black4,bold]{char}"
+            border_position "bottom"
+
+            // Modes
+            mode_locked      ""
+            mode_normal      "#[fg=$dragon_gray2,blink]normal"
+            mode_pane        "#[fg=$dragon_green,blink]pane"
+            mode_rename_pane "#[fg=$dragon_green,blink]pane-rename"
+            mode_tab         "#[fg=$dragon_orange,blink]tab"
+            mode_rename_tab  "#[fg=$dragon_orange,blink]tab-rename"
+            mode_resize      "#[fg=$dragon_violet,blink]resize"
+            mode_session     "#[fg=$dragon_teal,blink]session"
+            mode_scroll      "#[fg=$dragon_pink,blink]scroll"
+            mode_search      "#[fg=$dragon_yellow,blink]search"
+            mode_entsearch   "#[fg=$dragon_yellow,blink]entsearch"
+
+            // zjframes
+            hide_frame_for_single_pane "false"
+		}
+	}
+	pane name="clock" {
+		command "tty-clock"
+		args "-s" "-S" "-c" "-n"
+	}
+	floating_panes {
+    	pane name="" {
+    		plugin location="file:~/.config/zellij/bin/zellij-sessionizer.wasm" {
+                floating true
+                move_to_focused_tab true
+                cwd "/"
+                root_dirs "/Users/luke.marques/projects/personal;/Users/luke.marques/projects/work"
+                session_layout "editor"               
+    		}
+    		y "60%"
+    		height "20%"
+    	}
+	}
+	pane size=15 borderless=true {
+		plugin location="file:~/.config/zellij/bin/zjstatus.wasm" {
+			// Colors
+			color_dragon_black3   "#181616"
+
+			// Status Bar Elements and Positions
+            format_left    ""
+            format_center  "#[fg=$dragon_black3]not-visable"
+            format_right   ""
+            format_space   ""
+
+            // Border
+            border_enabled  "false"
+            border_char     "─"
+            border_format   "#[fg=$dragon_black4,bold]{char}"
+            border_position "top"
+
+            // zjframes
+            hide_frame_for_single_pane "false"
+		}
+	}
+}
+session_serialization false // this will apply only to the initial welcome screen layout, and is intended to prevent lots of garbage sessions left around

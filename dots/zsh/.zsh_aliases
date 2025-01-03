@@ -18,4 +18,4 @@ alias create="ssh create"
 alias dotdrop="dotdrop --cfg=./dotdrop/config.yaml"
 
 # Zellij
-alias zj="zellij -l welcome"
+alias zj="zellij -l session-picker"

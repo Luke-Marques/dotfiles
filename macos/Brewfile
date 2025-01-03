@@ -5,6 +5,7 @@ tap "homebrew/bundle"
 tap "homebrew/services"
 
 # Packages
+brew "tty-clock"
 brew "fish"
 brew "ansible-language-server"
 brew "go"
