@@ -43,4 +43,14 @@ eval "$(direnv hook zsh)"
 # Set up Starship prompt
 eval "$(starship init zsh)"
 
+# --- ZELLIJ --------------------------------------------------------------------------
+
+if [[ -z "$ZELLIJ" ]]; then
+  zellij --layout session-picker
+
+  if [[ "$ZELLIJ_AUTO_EXIT" == true ]]; then
+    exit
+  fi
+fi
+
 # --- FIN -----------------------------------------------------------------------------
