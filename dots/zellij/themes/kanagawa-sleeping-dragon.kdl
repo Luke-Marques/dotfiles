@@ -1,0 +1,17 @@
+themes {
+    kanagawa-sleeping-dragon {
+
+    	fg    "#a6a69c" // dragonGray
+    	white "#a6a69c" // dragonGray
+
+        bg "#393836"  // dragonBlack3
+        red "#c4746e"  // dragonRed
+        green "#87a987" // dragonGreen 
+        yellow "#a6a69c" // dragonYellow
+        blue "#8ba4b0"  // dragonBlue2 
+        magenta "#8992a7"  // dragonViolet 
+        orange "#b6927b"  // dragonOrange 
+        cyan "#8ea4a2"  // dragonAqua
+        black "#181616"  // dragonBlack0
+    }    
+}
