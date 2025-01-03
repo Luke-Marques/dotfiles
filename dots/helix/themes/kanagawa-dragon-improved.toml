@@ -20,9 +20,18 @@ inherits = "kanagawa-dragon"
 
 # Popups
 "ui.popup" = { fg = "oldWhite", bg = "dragonBlack1" }
+"ui.window" = { fg = "dragonBlack1" }
+"ui.help" = { fg = "fujiWhite", bg = "dragonBlack1" }
+"ui.text" = "fujiWhite"
+"ui.text.focus" = { fg = "fujiWhite", bg = "dragonBlack5", modifiers = ["bold"] }
 
 # Ruler
 "ui.virtual.ruler" = { bg = "dragonBlack4" }
 
 # Jump Labels
 "ui.virtual.jump-label" = { fg = "oniViolet", modifiers = ["bold"] }
+
+# Pop-up Menu
+"ui.menu" = { fg = "fujiWhite", bg = "dragonBlack4" }
+"ui.menu.selected" = { fg = "fujiWhite", bg = "dragonBlack6", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "oldWhite", bg = "dragonBlack4" }
