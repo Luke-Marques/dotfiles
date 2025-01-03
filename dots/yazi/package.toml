@@ -2,4 +2,4 @@
 deps = []
 
 [flavor]
-deps = [{ use = "bennyyip/gruvbox-dark", rev = "c204853" }, { use = "dangooddd/kanagawa", rev = "b32f205" }, { use = "marcosvnmelo/kanagawa-dragon", rev = "2ddff30" }]
+deps = [{ use = "marcosvnmelo/kanagawa-dragon", rev = "2ddff30" }]

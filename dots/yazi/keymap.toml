@@ -1,0 +1,4 @@
+[manager]
+prepend_keymap = [
+  { on = ".", run = "shell --block --confirm 'hx .'", desc = "Open the current directory in Helix" },
+]
