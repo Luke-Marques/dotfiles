@@ -18,3 +18,5 @@ cursor-style = block
 shell-integration-features = no-cursor
 
 mouse-hide-while-typing = true
+
+keybind = opt+3=text:#
