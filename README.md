@@ -26,3 +26,16 @@ installing `rust` or `homebrew`.
 On MacOS, ensure that `brew` is installed appropriately and the correct permissions 
 have been granted. Then navigate to `./macos` and run the `brew bundle` command to
 install all brew packages/casks definied in `./macos/Brewfile`.
+
+## To-Do
+
+- [ ] New Zellij welcome screen is creating garbage sessions which are not being cleaned up.
+- [ ] Add [zellij-forgot](https://github.com/karimould/zellij-forgot) Zellij plugin for keybindings popup.
+- [ ] Add [zk](https://github.com/zk-org/zk) plain-text note taking assistant.
+- [ ] Add [skim](https://github.com/skim-rs/skim) as rust-based fzf.
+- [ ] Add [fd](https://github.com/sharkdp/fd) as better `find`.
+- [ ] Add [mpls](https://github.com/mhersson/mpls) for live markdown preview in helix/browser.
+- [ ] Cleanup MacOS brewfile (ensure all required programs are present in brewfile).
+- [ ] Update Helix.
+  - [ ] Add keybinds to minus mode for sub-word navigation in Helix.
+  - [ ] Configure in-line diagnostics in Helix.
