@@ -65,6 +65,14 @@ keybinds clear-defaults=true {
         bind "j" "Down" { MoveFocus "Down"; SwitchToMode "Normal"; }
         bind "k" "Up" { MoveFocus "Up"; SwitchToMode "Normal"; }
 
+        // Open zellij-forgot plugin (keybindings)
+        bind "f" {
+            LaunchOrFocusPlugin "zellij-forgot" {
+                floating true
+            }
+            SwitchToMode "Locked"
+        }
+
         // Shortcuts
         bind "|" { NewPane "Right"; SwitchToMode "Locked"; }
         bind "_" { NewPane "Down"; SwitchToMode "Locked"; }
@@ -292,6 +300,7 @@ plugins {
     plugin-manager location="zellij:plugin-manager"
     zj-quit location="file:~/.config/zellij/bin/zj-quit.wasm"
     zellij-sessionizer location="file:~/.config/zellij/bin/zellij-sessionizer.wasm"
+    zellij-forgot location="file:~/.config/zellij/bin/zellij_forgot.wasm"
 }
 load_plugins {}
 
