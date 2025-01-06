@@ -19,6 +19,7 @@
     ~/.config/yazi: dots/yazi
     ~/.config/zellij: dots/zellij
     ~/.config/fish: dots/fish
+    ~/.config/zk: dots/zk
 
 - create:
   - ~/.config/zsh/.zsh_history

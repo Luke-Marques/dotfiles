@@ -30,8 +30,8 @@ install all brew packages/casks definied in `./macos/Brewfile`.
 ## To-Do
 
 - [ ] New Zellij welcome screen is creating garbage sessions which are not being cleaned up.
-- [ ] Add [zellij-forgot](https://github.com/karimould/zellij-forgot) Zellij plugin for keybindings popup.
-- [ ] Add [zk](https://github.com/zk-org/zk) plain-text note taking assistant.
+- [x] Add [zellij-forgot](https://github.com/karimould/-forgot) Zellij plugin for keybindings popup.
+- [x] Add [zk](https://github.com/zk-org/zk) plain-text note taking assistant.
 - [ ] Add [skim](https://github.com/skim-rs/skim) as rust-based fzf.
 - [ ] Add [fd](https://github.com/sharkdp/fd) as better `find`.
 - [ ] Add [mpls](https://github.com/mhersson/mpls) for live markdown preview in helix/browser.
