@@ -262,7 +262,7 @@ keybinds clear-defaults=true {
                 floating true
                 move_to_focused_tab true
                 cwd "/"
-                root_dirs "/Users/luke.marques/projects/personal;/Users/luke.marques/projects/work"
+                root_dirs "/Users/luke.marques/projects/personal;/Users/luke.marques/projects/work;/Users/k1763489/projects/personal;/Users/k1763489/projects/work"
                 session_layout "editor"               
             };
             SwitchToMode "Locked"
