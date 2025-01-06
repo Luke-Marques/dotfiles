@@ -6,8 +6,8 @@ inherits = "kanagawa-dragon"
 "ui.bufferline.background" = { bg = "dragonBlack3" }
 
 # Gutter
-"ui.gutter" = { fg = "dragonBlack2", bg = "dragonBlack2" }
-"ui.linenr" = { fg = "dragonBlack6", bg = "dragonBlack2" }
+"ui.gutter" = { fg = "dragonBlack3", bg = "dragonBlack3" }
+"ui.linenr" = { fg = "dragonBlack5", bg = "dragonBlack3" }
 "ui.linenr.selected" = { fg = "roninYellow", modifiers = ["bold"] }
 
 # Cursor line/column highlight
