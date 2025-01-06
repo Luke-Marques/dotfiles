@@ -6,13 +6,18 @@ color-modes = true
 cursorcolumn = true
 cursorline = true
 idle-timeout = 10
-jump-label-alphabet = "fjdkslghabnvmctyrueiwoxqpz"
+# jump-label-alphabet = "fjdkslghabnvmctyrueiwoxqpz"
 line-number = "relative"
 rulers = [88]
 scrolloff = 10
 shell = ["zsh", "-c"]
 text-width = 88
 true-color = true
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "error"
+# other-lines = "error"
 
 [editor.whitespace.render]
 newline = "all"
@@ -61,6 +66,18 @@ o = ":buffer-close-others"
 p = "goto_previous_buffer"
 v = ":vsplit-new"
 w = ":write-all"
+
+[keys.normal.minus]
+"minus" = ["move_prev_sub_word_start", "move_next_sub_word_end"]
+"w" = "move_next_sub_word_start"
+"b" = "move_prev_sub_word_start"
+"e" = "move_next_sub_word_end"
+
+[keys.select.minus]
+"minus" = ["extend_prev_sub_word_start", "extend_next_sub_word_end"]
+"w" = "extend_next_sub_word_start"
+"b" = "extend_prev_sub_word_start"
+"e" = "extend_next_sub_word_end"
 
 [keys.select]
 "}" = "goto_next_paragraph"
