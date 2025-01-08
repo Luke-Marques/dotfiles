@@ -1,13 +1,11 @@
 theme = "Kanagawa Dragon"
 
 font-family = ""
-font-family = "Hack"
+font-family = "Berkeley Mono Trial"
 font-size = 14.5
 
 title = " "
 
-window-padding-x = 8
-window-padding-y = 8,4
 window-padding-balance = true
 
 macos-titlebar-style = "transparent"
