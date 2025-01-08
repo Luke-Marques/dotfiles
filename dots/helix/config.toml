@@ -5,15 +5,14 @@ bufferline = "always"
 color-modes = true
 cursorcolumn = true
 cursorline = true
+end-of-line-diagnostics = "hint"
 idle-timeout = 10
-# jump-label-alphabet = "fjdkslghabnvmctyrueiwoxqpz"
 line-number = "relative"
 rulers = [88]
 scrolloff = 10
 shell = ["zsh", "-c"]
 text-width = 88
 true-color = true
-end-of-line-diagnostics = "hint"
 
 [editor.inline-diagnostics]
 cursor-line = "error"
@@ -42,6 +41,7 @@ render = true
 hidden = false
 
 [editor.lsp]
+auto-signature-help = false
 display-messages = true
 
 [editor.statusline]
@@ -50,7 +50,13 @@ mode.insert = "I"
 mode.normal = "N"
 mode.select = "S"
 
+[keys.insert]
+C-c = "signature_help"
+
 [keys.normal]
+"$" = "goto_line_end"
+"0" = "goto_line_start"
+"_" = "goto_first_nonwhitespace"
 "{" = "goto_prev_paragraph"
 "}" = "goto_next_paragraph"
 S-d = "kill_to_line_end"
@@ -80,5 +86,8 @@ w = ":write-all"
 "e" = "extend_next_sub_word_end"
 
 [keys.select]
+"$" = "goto_line_end"
+"0" = "goto_line_start"
+"_" = "goto_first_nonwhitespace"
 "}" = "goto_next_paragraph"
 "{" = "goto_prev_paragraph"
