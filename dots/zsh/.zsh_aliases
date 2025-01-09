@@ -1,6 +1,13 @@
 # Better ls
-alias ls="eza -a --long --icons always"
-alias t="eza -a -T -L 2 --icons always"
+alias ls="eza"
+alias la="eza -a"
+alias ll="eza -a --long --icons always --no-filesize --no-user --no-permissions --no-time"
+alias lll="eza -a --long --icons always --no-user --time-style '+%Y-%m-%d %H:%M'"
+alias t="eza -a -T -L 1 --icons always"
+for i in {1..9}; do
+    alias "t$i"="eza -a -T -L $i --icons always"
+done
+alias l="lll"
 
 # Better cd
 alias cd="z"
@@ -19,3 +26,6 @@ alias dotdrop="dotdrop --cfg=./dotdrop/config.yaml"
 
 # Zellij
 alias zj="zellij -l session-picker"
+
+# Yazi
+alias y="yazi"
