@@ -1,0 +1,71 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$username\
+$directory\
+$character\
+"""
+
+right_format = """
+$git_branch\
+${custom.git_status_dirty}\
+$git_status\
+$battery\
+$cmd_durations\
+"""
+
+# continuation_prompt = "[—→](white)"
+continuation_prompt = "*"
+
+[username]
+style_user = "white"
+format = "[$user]($style)"
+disabled = false
+show_always = false
+
+[directory]
+truncate_to_repo = true
+truncation_length = 4
+style = "yellow"
+format = "[$path]($style)"
+home_symbol = "~"
+
+[character]
+success_symbol = " [→](white)"
+error_symbol = " [→](red)"
+# vicmd_symbol = " [→](purple)"
+
+[git_branch]
+format = "[$branch]($style)"
+style = "purple"
+
+[custom.git_status_dirty]
+when = 'test -n "$(git status --porcelain 2>/dev/null)"'
+symbol = "dirty"
+style = "red"
+format=":[$symbol]($style)"
+shell = ["sh"]
+
+[git_status]
+format = '( [\[$ahead_behind$stashed\]]($style))'
+style = "bright-black"
+stashed = "≡"
+ahead = "↑${count}"
+behind = "↓${count}"
+
+[cmd_duration]
+format = "[ $duration]($style)"
+style = "bright-black"
+
+[battery]
+format = "[ \\[${percentage}\\]]($style)"
+
+[[battery.display]]
+threshold = 30
+style = "orange"
+
+[[battery.display]]
+threshold = 10
+style = "red"
+
