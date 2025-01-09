@@ -31,14 +31,14 @@ layout {
 
 				// Status Bar Elements and Positions
 	            format_left    "#[fg=$dragon_black6][{session}{mode}#[fg=$dragon_black6]] {tabs}"
-                format_center  "{notifications}"
+                format_center  "{notifications} {swap_layout}"
                 format_right   "{datetime}"
                 format_space   ""
 
                 // Border
                 border_enabled  "true"
                 border_char     "─"
-                border_format   "#[fg=$dragon_black4,bold]{char}"
+                border_format   "#[fg=$dragon_black4]{char}"
                 border_position "bottom"
 
                 // Modes
@@ -56,7 +56,7 @@ layout {
 
                 // Tabs
                 tab_normal         "#[fg=$dragon_black6]{index}:{name}"
-                tab_active         "#[fg=$dragon_gray2,bold]{index}:{name}"
+                tab_active         "#[fg=$dragon_gray2]{index}:{name}"
                 tab_separator      " "
 
                 // Date & Time

@@ -73,6 +73,14 @@ keybinds clear-defaults=true {
             SwitchToMode "Locked"
         }
 
+        // Open floating yazi explorer
+        bind "y" {
+            Run "yazi" {
+                floating true
+            }
+            SwitchToMode "Locked";
+        }
+
         // Shortcuts
         bind "|" { NewPane "Right"; SwitchToMode "Locked"; }
         bind "_" { NewPane "Down"; SwitchToMode "Locked"; }
@@ -310,6 +318,6 @@ theme "kanagawa-sleeping-dragon"
 // UI options
 ui {
     pane_frames {
-        rounded_corners true
+        rounded_corners false
     }
 }
