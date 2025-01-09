@@ -15,11 +15,12 @@
     ~/.config/helix: dots/helix
     ~/.config/kitty: dots/kitty
     ~/.config/lazygit: dots/lazygit
-    ~/.config/starship.toml: dots/starship/starship.toml
+    ~/.config/starship.toml: dots/starship/single-line-minimal.toml
     ~/.config/yazi: dots/yazi
     ~/.config/zellij: dots/zellij
     ~/.config/fish: dots/fish
     ~/.config/zk: dots/zk
+    ~/.config/neofetch: dots/neofetch
 
 - create:
   - ~/.config/zsh/.zsh_history
