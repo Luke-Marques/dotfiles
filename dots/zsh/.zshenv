@@ -1,5 +1,7 @@
 export PATH=${PATH}:${HOME}/bin
 
+export XDG_CONFIG_HOME="$HOME/.config"
+
 export PATH="/opt/homebrew/opt/trash/bin:$PATH"
 
 # Oh My Zsh
@@ -16,7 +18,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home
 export PATH="$PATH:$HOME/.local/bin"
 
 # Bat
-export BAT_THEME="kanagawa"
+export BAT_THEME="base16"
 
 # Editor
 export EDITOR=hx
