@@ -1,37 +1,37 @@
 inherits = "kanagawa-dragon"
 
 # Buffers
-"ui.bufferline" = { fg = "dragonGray3", bg = "dragonBlack4" }
-"ui.bufferline.active" = { fg = "fujiWhite", bg = "dragonBlack5" }
+"ui.bufferline" = { fg = "dragonBlack6", bg = "dragonBlack3" }
+"ui.bufferline.active" = { fg = "dragonGray2", bg = "dragonBlack3" }
 "ui.bufferline.background" = { bg = "dragonBlack3" }
 
 # Gutter
 "ui.gutter" = { fg = "dragonBlack3", bg = "dragonBlack3" }
 "ui.linenr" = { fg = "dragonBlack5", bg = "dragonBlack3" }
-"ui.linenr.selected" = { fg = "roninYellow", modifiers = ["bold"] }
+"ui.linenr.selected" = { fg = "dragonGray2", modifiers = ["bold"] }
 
 # Cursor line/column highlight
 "ui.cursorline.primary" = { bg = "dragonBlack4" }
 "ui.cursorcolumn.primary" = { bg = "dragonBlack4" }
 
 # Status bar
-"ui.statusline" = { fg = "oldWhite", bg = "dragonBlack1" }
-"ui.statusline.inactive" = { fg = "fujiGray", bg = "dragonBlack2" }
+"ui.statusline" = { fg = "oldWhite", bg = "dragonBlack3" }
+"ui.statusline.inactive" = { fg = "fujiGray", bg = "dragonBlack3" }
 
 # Popups
-"ui.popup" = { fg = "oldWhite", bg = "dragonBlack1" }
+"ui.popup" = { fg = "oldWhite", bg = "dragonBlack3" }
 "ui.window" = { fg = "dragonBlack1" }
-"ui.help" = { fg = "fujiWhite", bg = "dragonBlack1" }
+"ui.help" = { fg = "fujiWhite", bg = "dragonBlack3" }
 "ui.text" = "fujiWhite"
-"ui.text.focus" = { fg = "fujiWhite", bg = "dragonBlack5", modifiers = ["bold"] }
+"ui.text.focus" = { fg = "fujiWhite", bg = "dragonBlack4", modifiers = ["bold"] }
 
 # Ruler
 "ui.virtual.ruler" = { bg = "dragonBlack4" }
 
 # Jump Labels
-"ui.virtual.jump-label" = { fg = "oniViolet", modifiers = ["bold"] }
+"ui.virtual.jump-label" = { fg = "autumnRed" }
 
 # Pop-up Menu
-"ui.menu" = { fg = "fujiWhite", bg = "dragonBlack4" }
+"ui.menu" = { fg = "fujiWhite", bg = "dragonBlack3" }
 "ui.menu.selected" = { fg = "fujiWhite", bg = "dragonBlack6", modifiers = ["bold"] }
 "ui.menu.scroll" = { fg = "oldWhite", bg = "dragonBlack4" }
