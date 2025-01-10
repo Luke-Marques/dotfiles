@@ -7,6 +7,7 @@ cursorcolumn = true
 cursorline = true
 end-of-line-diagnostics = "hint"
 idle-timeout = 10
+jump-label-alphabet = "jfkdslahgvncmrueiwoty"
 line-number = "relative"
 rulers = [88]
 scrolloff = 10
