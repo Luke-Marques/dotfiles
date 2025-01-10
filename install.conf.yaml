@@ -21,6 +21,7 @@
     ~/.config/fish: dots/fish
     ~/.config/zk: dots/zk
     ~/.config/neofetch: dots/neofetch
+    ~/.config/dprint: dots/dprint
 
 - create:
   - ~/.config/zsh/.zsh_history

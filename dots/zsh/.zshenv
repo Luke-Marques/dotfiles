@@ -23,3 +23,6 @@ export BAT_THEME="base16"
 # Editor
 export EDITOR=hx
 export VISUAL="$EDITOR"
+
+# Dprint (markdown formatter)
+export DPRINT_CONFIG_FILE=~/.config/dprint/config.json
