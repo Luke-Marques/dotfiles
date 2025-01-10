@@ -29,3 +29,6 @@ alias zj="zellij -l session-picker"
 
 # Yazi
 alias y="yazi"
+
+# Python version
+alias wp="which python && python --version"
