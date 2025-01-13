@@ -1,4 +1,5 @@
-# Python
+# --- PYTHON ---
+
 [[language]]
 name = "python"
 scope = "source.python"
@@ -10,35 +11,38 @@ language-servers = [
   { name = "typos" },
 ]
 indent = { tab-width = 4, unit = "    " }
-# formatter = { command = "ruff", args = ["format", "--stdin-filename", "{}"] }
+formatter = { command = "ruff", args = ["format", "--stdin-filename", "{}"] }
 auto-format = true
 
-# Markdown
-[[language]]
-name = "markdown"
-formatter = { command = "dprint", args = ["fmt", "--stdin", "md", "--config", "~/.config/dprint/config.json"] }
-language-servers = [ "marksman", "typos"]
-text-width = 88
-indent = { tab-width = 4, unit = "    " }
-auto-format = true
-
-# Pyright Language Server
 [language-server.pyright]
 command = "pyright-langserver"
 args = ["--stdio"]
+
 [language-server.pyright.config]
 venvPath = "."
 venv = ".venv"
 pythonPath = ".venv/bin/python"
+
 [language-server.pyright.config.python.analysis]
 typeCheckingMode = "standard"
 autoImportCompletions = true
 extraPaths = [ "src" ]
 
-# Ruff
 [language-server.ruff]
 command = "/opt/homebrew/bin/ruff"
 args = ["server"]
+
+# --- MARKDOWN ---
+
+[[language]]
+name = "markdown"
+formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
+language-servers = [ "marksman", "typos"]
+text-width = 88
+indent = { tab-width = 4, unit = "    " }
+auto-format = true
+
+# --- GENERIC ---
 
 # Spell checker
 [language-server.typos]

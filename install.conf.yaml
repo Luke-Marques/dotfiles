@@ -5,23 +5,23 @@
 - clean: ["~"]
 
 - link:
-    ~/.zshenv: dots/zsh/.zshenv
-    ~/.zshrc: dots/zsh/.zshrc
-    ~/.zsh_aliases: dots/zsh/.zsh_aliases
     ~/.config/bat: dots/bat
     ~/.config/direnv: dots/direnv
+    ~/.config/fish: dots/fish
     ~/.config/ghostty: dots/ghostty
     ~/.config/gitui: dots/gitui
     ~/.config/helix: dots/helix
     ~/.config/kitty: dots/kitty
     ~/.config/lazygit: dots/lazygit
+    ~/.config/neofetch: dots/neofetch
     ~/.config/starship.toml: dots/starship/single-line-minimal.toml
     ~/.config/yazi: dots/yazi
     ~/.config/zellij: dots/zellij
-    ~/.config/fish: dots/fish
     ~/.config/zk: dots/zk
-    ~/.config/neofetch: dots/neofetch
-    ~/.config/dprint: dots/dprint
+    ~/.dprint.json: dots/dprint/dprint.json
+    ~/.zsh_aliases: dots/zsh/.zsh_aliases
+    ~/.zshenv: dots/zsh/.zshenv
+    ~/.zshrc: dots/zsh/.zshrc
 
 - create:
   - ~/.config/zsh/.zsh_history
