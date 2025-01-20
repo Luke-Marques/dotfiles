@@ -88,6 +88,8 @@ keybinds clear-defaults=true {
         bind "-" { SwitchToMode "Resize"; Resize "Decrease"; }
         bind "[" { PreviousSwapLayout; }
         bind "]" { NextSwapLayout; }
+        bind "w" { ToggleFloatingPanes; SwitchToMode "Locked"; }
+        bind "x" { CloseFocus; SwitchToMode "Locked"; }
     }
  
     // Pane mode: Navigate, create, close, move, and rename panes
