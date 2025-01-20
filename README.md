@@ -41,6 +41,6 @@ permissions have been granted. Then navigate to `./macos` and run the
       helix/browser.
 - [ ] Cleanup MacOS brewfile (ensure all required programs are present in
       brewfile).
-- [ ] Update Helix.
-  - [ ] Add keybinds to minus mode for sub-word navigation in Helix.
-  - [ ] Configure in-line diagnostics in Helix.
+- [x] Update Helix.
+  - [x] Add keybinds to minus mode for sub-word navigation in Helix.
+  - [x] Configure in-line diagnostics in Helix.
