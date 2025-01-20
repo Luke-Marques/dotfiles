@@ -38,7 +38,8 @@ args = ["server"]
 name = "markdown"
 formatter = { command = "dprint", args = ["fmt", "--stdin", "md"] }
 language-servers = [ "marksman", "typos"]
-text-width = 88
+text-width = 80
+rulers = [80]
 indent = { tab-width = 4, unit = "    " }
 auto-format = true
 
