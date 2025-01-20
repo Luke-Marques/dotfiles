@@ -21,3 +21,17 @@ layout_poetry() {
     export POETRY_ACTIVE=1  # or VENV_ACTIVE=1
     export VIRTUAL_ENV
 }
+
+
+layout_uv() {
+    PYPROJECT_TOML="${PYPROJECT_TOML:-pyproject.toml}"
+    if [[ ! -f "$PYPROJECT_TOML" ]]; then
+        log_status "No pyproject.toml found. Executing \`uv init\` to create a \`$PYPROJECT_TOML\` first."
+        uv init
+    fi
+
+    uv venv
+    source .venv/bin/activate
+
+    uv sync
+}
