@@ -1,7 +1,7 @@
 theme = "kanagawa-dragon"
 
 font-family = ""
-font-family = "Berkeley Mono Trial"
+font-family = "Berkeley Mono"
 font-size = 14.5
 font-codepoint-map = U+2500-U+257F=Hack
 
@@ -11,6 +11,7 @@ window-padding-x = 8
 window-padding-y = 8,4
 window-padding-balance = true
 
+window-colorspace = "display-p3"
 macos-titlebar-style = "transparent"
 macos-titlebar-proxy-icon = "hidden"
 macos-option-as-alt = true
