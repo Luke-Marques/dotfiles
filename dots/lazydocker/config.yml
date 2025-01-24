@@ -1,0 +1,12 @@
+gui:
+  border: single
+  theme:
+    activeBorderColor:
+      - yellow
+      - bold
+    inactiveBorderColor:
+      - "#625e5a"
+    optionsTextColor:
+      - "#625e5a"
+    selectedLineBgColor:
+      - "#393836"
