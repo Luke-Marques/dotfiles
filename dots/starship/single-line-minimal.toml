@@ -67,15 +67,21 @@ allowed_msg = "•"
 not_allowed_msg = "direnv not allowed"
 
 [battery]
-format = "[ \\[${percentage}\\]]($style)"
+format = "[$symbol](spring_green)[ ]($style)[${percentage}](bold fg:dragon_black3 bg:$style)[]($style)"
+charging_symbol = ""
+discharging_symbol = ""
+full_symbol = ""
+unknown_symbol = ""
+empty_symbol = ""
 
-[[battery.display]]
-threshold = 20
-style = "ronin_yellow bold"
 
 [[battery.display]]
 threshold = 10
-style = "samurai_red bold"
+style = "samurai_red"
+
+[[battery.display]]
+threshold = 20
+style = "ronin_yellow"
 
 [palettes.kanagawa_dragon]
 sumi_ink0 = "#16161D"
