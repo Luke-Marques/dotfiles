@@ -26,3 +26,6 @@ export VISUAL="$EDITOR"
 
 # Dprint (markdown formatter)
 export DPRINT_CONFIG_FILE=~/.config/dprint/config.json
+
+# Direnv
+export DIRENV_LOG_FORMAT=
