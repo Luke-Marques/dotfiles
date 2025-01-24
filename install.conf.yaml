@@ -2,12 +2,13 @@
     link:
       relink: true
 
-- clean: ["~"]
+- clean: [ "~" ]
 
 - link:
     ~/.config/bat: dots/bat
     ~/.config/direnv: dots/direnv
     ~/.config/fish: dots/fish
+    ~/.config/gh-dash: dots/gh-dash
     ~/.config/ghostty: dots/ghostty
     ~/.config/gitui: dots/gitui
     ~/.config/helix: dots/helix
@@ -24,7 +25,7 @@
     ~/.zshrc: dots/zsh/.zshrc
 
 - create:
-  - ~/.config/zsh/.zsh_history
+    - ~/.config/zsh/.zsh_history
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+    - [ git submodule update --init --recursive, Installing submodules ]
