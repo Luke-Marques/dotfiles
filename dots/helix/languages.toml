@@ -1,4 +1,4 @@
-# --- PYTHON ---
+# --- PYTHON --------------------------------------------------------------------------
 
 [[language]]
 name = "python"
@@ -32,7 +32,7 @@ extraPaths = [ "src" ]
 command = "/opt/homebrew/bin/ruff"
 args = ["server"]
 
-# --- MARKDOWN ---
+# --- MARKDOWN ------------------------------------------------------------------------
 
 [[language]]
 name = "markdown"
@@ -43,7 +43,17 @@ rulers = [80]
 indent = { tab-width = 4, unit = "    " }
 auto-format = true
 
-# --- GENERIC ---
+# --- YAML ----------------------------------------------------------------------------
+
+[[language]]
+name = "yaml"
+formatter = { command = "dprint", args = ["fmt", "--stdin", "yaml" ]}
+file-types = ["yaml", "yml"]
+text-width = 80
+rulers = [80]
+auto-format = true
+
+# --- GENERIC ------------------------------------------------------------------------
 
 # Spell checker
 [language-server.typos]
