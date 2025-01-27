@@ -77,11 +77,11 @@ empty_symbol = ""
 
 [[battery.display]]
 threshold = 10
-style = "samurai_red"
+style = "autumn_red"
 
 [[battery.display]]
 threshold = 20
-style = "ronin_yellow"
+style = "autumn_yellow"
 
 [palettes.kanagawa_dragon]
 sumi_ink0 = "#16161D"
