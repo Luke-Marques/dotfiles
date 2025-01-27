@@ -16,6 +16,22 @@ you like. The install script:
 2. Installs symlinks as defined in `./install.conf.yaml`.
 3. Updates submodules.
 
+## Showcase
+
+### Zellij Welcome Screen
+
+When a new terminal is opened, Zellij automatically opens with the below layout,
+using a plugin to present a list of project directories to open as a session (or
+reattach to if a session already exists).
+
+![zellij-welcome](screenshots/zellij-welcome-screen.png)
+
+### IDE Layout
+
+![helix](screenshots/helix-yazi.png)
+
+![lazygit](screenshots/lazygit.png)
+
 ## Install Scripts
 
 A list of program installation scripts can be found in `./bin`, such as scripts
