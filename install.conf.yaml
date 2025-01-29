@@ -15,6 +15,7 @@
     ~/.config/kitty: dots/kitty
     ~/.config/lazydocker: dots/lazydocker
     ~/.config/lazygit: dots/lazygit
+    ~/.config/leaderkey: dots/leaderkey
     ~/.config/neofetch: dots/neofetch
     ~/.config/starship.toml: dots/starship/single-line-minimal.toml
     ~/.config/yazi: dots/yazi

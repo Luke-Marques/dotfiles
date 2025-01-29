@@ -1,0 +1,215 @@
+{
+  "type" : "group",
+  "actions" : [
+    {
+      "type" : "application",
+      "key" : "f",
+      "value" : "/Applications/Ghostty.app",
+      "label" : "Ghostty"
+    },
+    {
+      "label" : "Browser",
+      "value" : "/Applications/Arc.app",
+      "key" : "j",
+      "type" : "application"
+    },
+    {
+      "key" : " ",
+      "type" : "application",
+      "value" : "/Applications/Raycast.app",
+      "label" : "Raycast"
+    },
+    {
+      "actions" : [
+        {
+          "value" : "/Applications/Spotify.app",
+          "type" : "application",
+          "key" : "s",
+          "label" : ""
+        },
+        {
+          "key" : "e",
+          "value" : "/Applications/Mail.app",
+          "label" : "",
+          "type" : "application"
+        },
+        {
+          "key" : "i",
+          "value" : "/System/Applications/Music.app",
+          "type" : "application",
+          "label" : ""
+        },
+        {
+          "label" : "",
+          "key" : "m",
+          "value" : "/Applications/Messages.app",
+          "type" : "application"
+        }
+      ],
+      "label" : "Open...",
+      "key" : "o",
+      "type" : "group"
+    },
+    {
+      "label" : "Window...",
+      "type" : "group",
+      "key" : "w",
+      "actions" : [
+        {
+          "key" : "f",
+          "value" : "raycast://extensions/raycast/window-management/toggle-fullscreen",
+          "label" : "Toggle fullscreen",
+          "type" : "url"
+        },
+        {
+          "key" : "d",
+          "label" : "Desktop...",
+          "type" : "group",
+          "actions" : [
+            {
+              "key" : "l",
+              "label" : "Next",
+              "type" : "url",
+              "value" : "raycast://extensions/raycast/window-management/next-desktop",
+            },
+            {
+              "key" : "h",
+              "label" : "Previous",
+              "type" : "url",
+              "value" : "raycast://extensions/raycast/window-management/previous-desktop",
+            },
+          ],
+        },
+        {
+          "key" : "m",
+          "label" : "Move...",
+          "type" : "group",
+          "actions" : [
+            {
+              "key" : "c",
+              "label" : "Center",
+              "type" : "url",
+              "value" : "raycast://extensions/raycast/window-management/center",
+            },
+            {
+              "key" : "h",
+              "label" : "Left",
+              "type" : "url",
+              "value" : "raycast://extensions/raycast/window-management/move-left",
+            },
+            {
+              "key" : "j",
+              "label" : "Down",
+              "type" : "url",
+              "value" : "raycast://extensions/raycast/window-management/move-down",
+            },
+            {
+              "key" : "k",
+              "label" : "Up",
+              "type" : "url",
+              "value" : "raycast://extensions/raycast/window-management/move-up",
+            },
+            {
+              "key" : "l",
+              "label" : "Right",
+              "type" : "url",
+              "value" : "raycast://extensions/raycast/window-management/move-left",
+            }
+          ],
+        },
+        {
+          "key" : "r",
+          "type" : "group",
+          "label" : "Resize...",
+          "actions" : [
+            {
+              "value" : "raycast://extensions/raycast/window-management/left-half",
+              "label" : "Left half",
+              "type" : "url",
+              "key" : "h"
+            },
+            {
+              "value" : "raycast://extensions/raycast/window-management/right-half",
+              "key" : "l",
+              "label" : "Right half",
+              "type" : "url"
+            },
+            {
+              "value" : "raycast://extensions/raycast/window-management/first-third",
+              "key" : "1",
+              "type" : "url",
+              "label" : "First third"
+            },
+            {
+              "label" : "Center third",
+              "value" : "raycast://extensions/raycast/window-management/center-third",
+              "type" : "url",
+              "key" : "2"
+            },
+            {
+              "type" : "url",
+              "key" : "3",
+              "value" : "raycast://extensions/raycast/window-management/last-third",
+              "label" : "Last third"
+            },
+            {
+              "label" : "Reasonable size",
+              "key" : "r",
+              "type" : "url",
+              "value" : "raycast://extensions/raycast/window-management/reasonable-size"
+            },
+            {
+              "label" : "Almost maximise",
+              "type" : "url",
+              "value" : "raycast://extensions/raycast/window-management/almost-maximize",
+              "key" : "n"
+            },
+            {
+              "key" : "m",
+              "value" : "raycast://extensions/raycast/window-management/maximize",
+              "type" : "url",
+              "label" : "Maximise"
+            },
+            {
+              "value" : "raycast://extensions/raycast/window-management/make-smaller",
+              "label" : "Smaller",
+              "type" : "url",
+              "key" : "-"
+            },
+            {
+              "value" : "raycast://extensions/raycast/window-management/make-larger",
+              "label" : "Larger",
+              "key" : "=",
+              "type" : "url"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key" : "r",
+      "label" : "Raycast...",
+      "type" : "group",
+      "actions" : [
+        {
+          "value" : "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols",
+          "key" : "e",
+          "label" : "",
+          "type" : "url"
+        },
+        {
+          "value" : "raycast://confetti",
+          "key" : "p",
+          "type" : "url",
+          "label" : ""
+        },
+        {
+          "value" : "raycast://extensions/raycast/system/open-camera",
+          "type" : "url",
+          "key" : "c",
+          "label" : ""
+        }
+      ],
+    },
+  ]
+}
