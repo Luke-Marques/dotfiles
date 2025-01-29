@@ -1,4 +1,4 @@
-theme = "kanagawa-dragon"
+theme = kanagawa-dragon
 
 font-family = ""
 font-family = "Berkeley Mono"
@@ -11,9 +11,9 @@ window-padding-x = 8
 window-padding-y = 8,4
 window-padding-balance = true
 
-window-colorspace = "display-p3"
-macos-titlebar-style = "transparent"
-macos-titlebar-proxy-icon = "hidden"
+window-colorspace = display-p3
+macos-titlebar-style = hidden
+macos-titlebar-proxy-icon = hidden
 macos-option-as-alt = true
 
 cursor-style = block
@@ -23,4 +23,7 @@ mouse-hide-while-typing = true
 
 keybind = opt+3=text:#
 
-fullscreen = true
+fullscreen = false
+
+# background-opacity = 0.9
+# background-blur-radius = 5
