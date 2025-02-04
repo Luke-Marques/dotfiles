@@ -62,7 +62,9 @@ keybindings:
   prs: []
   branches: []
 
-repoPaths: {}
+repoPaths: {
+  ourfuturehealth/linked-data-pipeline: ~/projects/work/ld-pipeline,
+}
 
 theme:
   colors:
