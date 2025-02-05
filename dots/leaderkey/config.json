@@ -2,60 +2,62 @@
   "type" : "group",
   "actions" : [
     {
-      "key" : "f",
-      "label" : "Ghostty",
       "type" : "application",
+      "label" : "Ghostty",
       "value" : "/Applications/Ghostty.app",
+      "key" : "f"
     },
     {
       "key" : "j",
-      "label" : "Browser",
       "type" : "application",
-      "value" : "/Applications/Google Chrome.app",
+      "label" : "Browser",
+      "value" : "/Applications/Google Chrome.app"
     },
     {
-      "key" : "l",
-      "label" : "Slack",
       "type" : "application",
       "value" : "/Applications/Slack.app",
+      "key" : "l",
+      "label" : "Slack"
     },
     {
       "key" : "t",
-      "label" : "Teams",
-      "type" : "application",
       "value" : "/Applications/Microsoft Teams.app",
+      "type" : "application",
+      "label" : "Teams"
     },
     {
-      "key" : "o",
-      "label" : "Outlook",
       "type" : "application",
       "value" : "/Applications/Microsoft Outlook.app",
+      "key" : "o",
+      "label" : "Outlook"
     },
     {
-      "key" : "s",
-      "label" : "Spotify",
-      "type" : "application",
       "value" : "/Applications/Spotify.app",
+      "key" : "s",
+      "type" : "application",
+      "label" : "Spotify"
     },
     {
       "key" : " ",
-      "label" : "Raycast",
-      "type" : "application",
       "value" : "/Applications/Raycast.app",
+      "type" : "application",
+      "label" : "Raycast"
     },
     {
+      "type" : "group",
+      "key" : "o",
       "actions" : [
         {
-          "key" : "s",
           "label" : "",
           "type" : "application",
-          "value" : "/Applications/Spotify.app"
+          "value" : "/Applications/Spotify.app",
+          "key" : "s"
         },
         {
-          "value" : "/Applications/Mail.app",
-          "key" : "e",
           "label" : "",
-          "type" : "application"
+          "type" : "application",
+          "value" : "/Applications/Mail.app",
+          "key" : "e"
         },
         {
           "label" : "",
@@ -66,174 +68,172 @@
         {
           "value" : "/Applications/Messages.app",
           "type" : "application",
-          "key" : "m",
-          "label" : ""
+          "label" : "",
+          "key" : "m"
         }
       ],
-      "type" : "group",
-      "label" : "Open...",
-      "key" : "o"
+      "label" : "Open..."
     },
     {
+      "label" : "Window...",
+      "key" : "w",
+      "type" : "group",
       "actions" : [
         {
-          "value" : "raycast://extensions/raycast/window-management/toggle-fullscreen",
-          "type" : "url",
           "label" : "Toggle fullscreen",
-          "key" : "f"
+          "key" : "f",
+          "type" : "url",
+          "value" : "raycast://extensions/raycast/window-management/toggle-fullscreen"
         },
         {
+          "type" : "group",
+          "label" : "Desktop...",
           "actions" : [
             {
               "value" : "raycast://extensions/raycast/window-management/next-desktop",
-              "type" : "url",
+              "label" : "Next",
               "key" : "l",
-              "label" : "Next"
+              "type" : "url"
             },
             {
               "key" : "h",
               "type" : "url",
-              "label" : "Previous",
-              "value" : "raycast://extensions/raycast/window-management/previous-desktop"
+              "value" : "raycast://extensions/raycast/window-management/previous-desktop",
+              "label" : "Previous"
             }
           ],
-          "key" : "d",
-          "label" : "Desktop...",
-          "type" : "group"
+          "key" : "d"
         },
         {
-          "label" : "Move...",
           "actions" : [
             {
               "key" : "c",
-              "type" : "url",
+              "label" : "Center",
               "value" : "raycast://extensions/raycast/window-management/center",
-              "label" : "Center"
+              "type" : "url"
             },
             {
-              "type" : "url",
+              "label" : "Left",
               "value" : "raycast://extensions/raycast/window-management/move-left",
               "key" : "h",
-              "label" : "Left"
-            },
-            {
-              "key" : "j",
-              "value" : "raycast://extensions/raycast/window-management/move-down",
-              "label" : "Down",
               "type" : "url"
             },
             {
               "type" : "url",
-              "key" : "k",
-              "value" : "raycast://extensions/raycast/window-management/move-up",
-              "label" : "Up"
+              "value" : "raycast://extensions/raycast/window-management/move-down",
+              "label" : "Down",
+              "key" : "j"
             },
             {
-              "label" : "Right",
               "type" : "url",
+              "value" : "raycast://extensions/raycast/window-management/move-up",
+              "label" : "Up",
+              "key" : "k"
+            },
+            {
+              "key" : "l",
               "value" : "raycast://extensions/raycast/window-management/move-left",
-              "key" : "l"
+              "label" : "Right",
+              "type" : "url"
             }
           ],
+          "label" : "Move...",
           "key" : "m",
           "type" : "group"
         },
         {
           "label" : "Resize...",
+          "key" : "r",
           "type" : "group",
           "actions" : [
             {
-              "label" : "Left half",
               "value" : "raycast://extensions/raycast/window-management/left-half",
+              "label" : "Left half",
               "type" : "url",
               "key" : "h"
             },
             {
-              "value" : "raycast://extensions/raycast/window-management/right-half",
               "type" : "url",
-              "key" : "l",
-              "label" : "Right half"
+              "value" : "raycast://extensions/raycast/window-management/right-half",
+              "label" : "Right half",
+              "key" : "l"
             },
             {
-              "label" : "First third",
+              "type" : "url",
               "value" : "raycast://extensions/raycast/window-management/first-third",
               "key" : "1",
+              "label" : "First third"
+            },
+            {
+              "key" : "2",
+              "type" : "url",
+              "label" : "Center third",
+              "value" : "raycast://extensions/raycast/window-management/center-third"
+            },
+            {
+              "key" : "3",
+              "value" : "raycast://extensions/raycast/window-management/last-third",
+              "label" : "Last third",
               "type" : "url"
             },
             {
-              "value" : "raycast://extensions/raycast/window-management/center-third",
-              "key" : "2",
+              "label" : "Reasonable size",
               "type" : "url",
-              "label" : "Center third"
-            },
-            {
-              "type" : "url",
-              "label" : "Last third",
-              "key" : "3",
-              "value" : "raycast://extensions/raycast/window-management/last-third"
-            },
-            {
-              "type" : "url",
-              "value" : "raycast://extensions/raycast/window-management/reasonable-size",
               "key" : "r",
-              "label" : "Reasonable size"
+              "value" : "raycast://extensions/raycast/window-management/reasonable-size"
             },
             {
               "key" : "n",
-              "value" : "raycast://extensions/raycast/window-management/almost-maximize",
               "type" : "url",
+              "value" : "raycast://extensions/raycast/window-management/almost-maximize",
               "label" : "Almost maximise"
             },
             {
-              "type" : "url",
-              "key" : "m",
               "value" : "raycast://extensions/raycast/window-management/maximize",
-              "label" : "Maximise"
+              "type" : "url",
+              "label" : "Maximise",
+              "key" : "m"
             },
             {
               "key" : "-",
-              "type" : "url",
               "label" : "Smaller",
-              "value" : "raycast://extensions/raycast/window-management/make-smaller"
+              "value" : "raycast://extensions/raycast/window-management/make-smaller",
+              "type" : "url"
             },
             {
+              "key" : "=",
               "value" : "raycast://extensions/raycast/window-management/make-larger",
-              "label" : "Larger",
               "type" : "url",
-              "key" : "="
+              "label" : "Larger"
             }
-          ],
-          "key" : "r"
+          ]
         }
-      ],
-      "label" : "Window...",
-      "key" : "w",
-      "type" : "group"
+      ]
     },
     {
-      "label" : "Raycast...",
       "key" : "r",
+      "label" : "Raycast...",
+      "type" : "group",
       "actions" : [
         {
-          "type" : "url",
-          "key" : "e",
           "value" : "raycast://extensions/raycast/emoji-symbols/search-emoji-symbols",
+          "key" : "e",
+          "type" : "url",
           "label" : ""
         },
         {
-          "label" : "",
           "value" : "raycast://confetti",
+          "label" : "",
           "key" : "p",
           "type" : "url"
         },
         {
           "type" : "url",
-          "value" : "raycast://extensions/raycast/system/open-camera",
           "label" : "",
-          "key" : "c"
+          "key" : "c",
+          "value" : "raycast://extensions/raycast/system/open-camera"
         }
-      ],
-      "type" : "group"
+      ]
     }
   ]
 }
