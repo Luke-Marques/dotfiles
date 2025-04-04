@@ -3,8 +3,6 @@ theme = "kanagawa-dragon-improved"
 [editor]
 bufferline = "always"
 color-modes = true
-cursorcolumn = true
-cursorline = true
 end-of-line-diagnostics = "hint"
 idle-timeout = 10
 jump-label-alphabet = "jfkdslahgvncmrueiwoty"
@@ -55,6 +53,7 @@ mode.select = "S"
 C-c = "signature_help"
 
 [keys.normal]
+"'" = ["goto_word", "goto_definition"]
 ";" = "goto_word"
 "backspace" = "goto_word"
 "S-tab" = "shrink_selection"
@@ -78,7 +77,6 @@ a = ":write-all"
 A = ":write-all!"
 q = ":quit"
 Q = ":quit!"
-
 
 [keys.normal.space.b]
 b = "buffer_picker"
