@@ -76,20 +76,30 @@ layout {
 		children
 	}
 
-	pane_template name="yazi" {
-		command "zsh"
-		args "-c" "if [ -f .envrc ]; then direnv allow && direnv exec . yazi; else yazi; fi"
-	}
-
-	pane_template name="lazygit" {
-		command "lazygit"
-	}
 
 	tab name="editor" {
-		yazi
+		pane name="yazi" {
+			command "zsh"
+			args "-c" "if [ -f .envrc ]; then direnv allow && direnv exec . yazi; else yazi; fi"
+		}
+	}
+
+	tab name="claude" {
+		pane name="claude" {
+			command "claude"
+		}
 	}
 
 	tab name="lazygit" {
-		lazygit
+		pane name="lazygit" {
+			command "lazygit"
+		}
+	}
+
+	tab name="github" {
+		pane name="github" {
+			command "gh"
+			args "dash"
+		}
 	}
 }
