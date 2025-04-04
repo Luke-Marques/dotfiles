@@ -7,11 +7,12 @@ injection-regex = "python"
 comment-token = "#"
 language-servers = [
   { name = "pyright", except-features = [ "format" ] },
-  { name = "ruff", except-features = [ "diagnostics" ] },
+  { name = "ruff" },
   { name = "typos" },
 ]
 indent = { tab-width = 4, unit = "    " }
-formatter = { command = "ruff", args = ["format", "--stdin-filename", "{}"] }
+formatter = { command = "bash", args = ["-c", "ruff check --select I --fix - | ruff format -"]}
+# formatter = { command = "ruff", args = ["format", "--stdin-filename", "{}"] }
 auto-format = true
 
 [language-server.pyright]
