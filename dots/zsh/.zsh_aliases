@@ -10,7 +10,10 @@ done
 alias l="lll"
 
 # Better cd
-alias cd="z"
+cdz() {
+    z "$@" && la
+}
+alias cd=cdz
 
 # Better cat
 alias cat="bat"
