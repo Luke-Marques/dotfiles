@@ -89,6 +89,9 @@ a = ":write-all"
 A = ":write-all!"
 q = ":quit"
 Q = ":quit!"
+r = ":reload-all"
+# Git blame
+b = ":sh git -C $(dirname $(realpath %{buffer_name})) blame -L %{cursor_line},%{cursor_line} $(realpath %{buffer_name})"
 
 [keys.normal.space.b]
 b = "buffer_picker"
