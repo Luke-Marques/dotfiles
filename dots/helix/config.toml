@@ -69,6 +69,18 @@ X = "extend_line_up"
 esc = ["collapse_selection", "keep_primary_selection"]
 "ret" = "goto_definition"
 
+[keys.normal.space]
+e = [
+  ':sh rm -f /tmp/unique-file',
+  ':insert-output yazi %{buffer_name} --chooser-file=/tmp/unique-file',
+  ':insert-output echo "\x1b[?1049h\x1b[?2004h" > /dev/tty',
+  ':open %sh{cat /tmp/unique-file}',
+  ':redraw',
+  ':set mouse false',
+  ':set mouse true',
+]
+o = ':sh zellij run -c -f --name="Search and Replace" -- scooter'
+
 # Files
 [keys.normal.space.space]
 w = ":write"
