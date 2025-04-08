@@ -76,17 +76,10 @@ layout {
 		children
 	}
 
-
 	tab name="editor" {
 		pane name="yazi" {
 			command "zsh"
 			args "-c" "if [ -f .envrc ]; then direnv allow && direnv exec . yazi; else yazi; fi"
-		}
-	}
-
-	tab name="claude" {
-		pane name="claude" {
-			command "claude"
 		}
 	}
 
@@ -96,10 +89,10 @@ layout {
 		}
 	}
 
-	tab name="github" {
-		pane name="github" {
-			command "gh"
-			args "dash"
+	tab name="claude" {
+		pane name="claude" {
+			command "claude"
 		}
 	}
+
 }
