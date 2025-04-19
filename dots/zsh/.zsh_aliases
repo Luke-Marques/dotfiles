@@ -35,3 +35,6 @@ alias y="yazi"
 
 # Python version
 alias wp="which python && python --version"
+
+# SED (Mac OS version has some issues)
+alias sed=gnu-sed
