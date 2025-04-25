@@ -2,9 +2,6 @@
 
 ## Palette
 
-
-- ![#f03c15](https://placehold.co/15x15/f03c15/f03c15.png) `#f03c15`
-
 ### Background Colors
 
 - sumiInk0 (`#16161D`) ![#16161D](https://placehold.co/15x15/16161D/16161D.png)
