@@ -1,5 +1,24 @@
-[plugin]
-deps = []
+[[plugin.deps]]
+use = "wylie102/duckdb"
+rev = "eaa748c"
+hash = "4f80b6483ead6be7958f76f71080a817"
 
-[flavor]
-deps = [{ use = "marcosvnmelo/kanagawa-dragon", rev = "2ddff30" }]
+[[plugin.deps]]
+use = "Reledia/glow"
+rev = "c76bf4f"
+hash = "a6b78bf9af5390e3a85a6951fbb7b93"
+
+[[plugin.deps]]
+use = "josephschmitt/auto-layout"
+rev = "626a601"
+hash = "747a700c90fffc5b187a6094fd0661b0"
+
+[[plugin.deps]]
+use = "boydaihungst/restore"
+rev = "328dd88"
+hash = "ad406e4a5ada589211e6ffe8bad3c983"
+
+[[flavor.deps]]
+use = "marcosvnmelo/kanagawa-dragon"
+rev = "2ddff30"
+hash = ""

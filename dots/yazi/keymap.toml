@@ -1,4 +1,14 @@
-[manager]
-prepend_keymap = [
-  { on = ".", run = "shell --block --confirm 'hx .'", desc = "Open the current directory in Helix" },
-]
+[[manager.prepend_keymap]]
+on = "."
+run = "shell --block --confirm 'hx .'"
+desc = "Open the current directory in Helix" 
+
+[[manager.prepend_keymap]]
+on = "H"
+run = "plugin duckdb -1"
+desc = "Scroll one column to the left"
+
+[[manager.prepend_keymap]]
+on = "L"
+run = "plugin duckdb +1"
+desc = "Scroll one column to the right"
