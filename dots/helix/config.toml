@@ -1,4 +1,4 @@
-theme = "kanagawa-dragon-improved"
+theme = "kanagawa-eclipse"
 
 [editor]
 bufferline = "always"
@@ -53,7 +53,7 @@ mode.select = "S"
 C-c = "signature_help"
 
 [keys.normal]
-"'" = ["goto_word", "goto_definition"]
+"'" = "goto_word"
 ";" = "goto_word"
 "backspace" = "goto_word"
 "S-tab" = "shrink_selection"
@@ -122,3 +122,6 @@ w = ":write-all"
 "_" = "goto_first_nonwhitespace"
 "}" = "goto_next_paragraph"
 "{" = "goto_prev_paragraph"
+"'" = "goto_word"
+";" = "goto_word"
+"backspace" = "goto_word"
