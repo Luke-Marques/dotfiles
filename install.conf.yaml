@@ -22,6 +22,7 @@
     ~/.config/zellij: dots/zellij
     ~/.config/zk: dots/zk
     ~/.dprint.json: dots/dprint/dprint.json
+    ~/.duckdbrc: dots/duckdb/.duckdbrc
     ~/.zsh_aliases: dots/zsh/.zsh_aliases
     ~/.zshenv: dots/zsh/.zshenv
     ~/.zshrc: dots/zsh/.zshrc
