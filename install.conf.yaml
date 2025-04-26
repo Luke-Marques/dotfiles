@@ -5,6 +5,9 @@
 - clean: [ "~" ]
 
 - link:
+    ~/.config/tofi: dots/tofi
+    ~/.config/waybar: dots/waybar
+    ~/.config/hypr: dots/hyprland
     ~/.config/bat: dots/bat
     ~/.config/direnv: dots/direnv
     ~/.config/fish: dots/fish
